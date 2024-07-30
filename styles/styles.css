@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../resources/field_blur.jpg'); /* Updated background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to let background show through */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Ensures proper positioning for the logo */
+}
+
+.title-section {
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.main-title {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: #264351;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4B91D1;
+    text-transform: uppercase;
+    margin-top: 0; /* Remove top margin to reduce spacing */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #213A53;
+    font-size: 28px;
+}
+
+.content-section {
+    text-align: left; /* Left-align content within this section */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px; /* Smaller font size for h2 */
+    color: #264351;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px; /* Slightly larger than before */
+    color: #264351;
+    margin-top: 0px; /* Adjust margin as needed */
+    text-align: center; /* Centered */
+}
+
+.custom-divider {
+    width: 80%; /* 80% width */
+    height: 2px;
+    margin: 20px auto; /* Centered */
+    background-color: #264351; /* Adjust color to match your theme */
+}
+
+.full-width {
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for contrast */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.full-width p {
+    margin-top: 15px; /* Added space between lines */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #9B0B1C; /* Updated link color */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: block;
+    width: calc(50% - 10px);
+    padding: 15px;
+    margin: 5px 0;
+    background-color: #213A53; /* Main button color */
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    height: 70px; /* Added height to ensure buttons are tall enough */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word; /* Ensure text breaks onto the next line */
+}
+
+.button:hover {
+    background-color: #345C83; /* Darker hover color for main buttons */
+}
+
+.button.white {
+    background-color: #FFFFFF;
+    color: #213A53;
+    border: 1px solid #213A53;
+}
+
+.button.white:hover {
+    background-color: #4B91D1;
+    color: #FFFFFF;
+}
+
+.home-link {
+    margin-top: 20px;
+}
+
+.home-link a {
+    text-decoration: underline;
+    color: #4B91D1; /* Same color as the subheader */
+    font-size: 16px;
+}
+
+.home-link a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: none; /* Remove background image on mobile */
+        background-color: #ffffff; /* Fallback background color */
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .button {
+        width: calc(50% - 10px); /* Keep two buttons per row */
+        margin: 5px;
+        height: 90px;
+    }
+}
