@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -183,10 +184,28 @@ a:hover {
     width: 100px; /* Adjust the size as needed */
 }
 
+.footer-disclaimer {
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent; /* Transparent background */
+    color: white;
+    text-align: center;
+    padding: 5px 10px; /* Reduced padding */
+    font-size: 12px; /* Small font size */
+    margin: 20px auto; /* Space above the footer and center the box */
+    border: 1px solid white; /* White border around the box for desktop */
+    text-transform: uppercase; /* Make text all caps */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.footer-disclaimer p {
+    margin: 2px 0; /* Tightened margin for paragraphs */
+}
+
 @media (max-width: 768px) {
     body {
         background-image: none; /* Remove background image on mobile */
-        background-color: #ffffff; /* Fallback background color */
+        background-color: #f5fbfc; /* New background color for mobile */
     }
 
     .container {
@@ -203,5 +222,10 @@ a:hover {
         width: calc(50% - 10px); /* Keep two buttons per row */
         margin: 5px;
         height: 90px;
+    }
+
+    .footer-disclaimer {
+        color: #213A53; /* Legible color for mobile */
+        border: 1px solid #264351; /* Updated border color for mobile */
     }
 }
