@@ -144,6 +144,8 @@ a:hover {
     justify-content: center;
     text-align: center;
     word-wrap: break-word; /* Ensure text breaks onto the next line */
+    line-height: 1.2; /* Reduced line height */
+
 }
 
 .button:hover {
@@ -222,6 +224,8 @@ a:hover {
         width: calc(50% - 10px); /* Keep two buttons per row */
         margin: 5px;
         height: 90px;
+        padding: 10px; /* Reduced padding */
+
     }
 
     .footer-disclaimer {
