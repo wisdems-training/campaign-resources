@@ -185,7 +185,7 @@ a:hover {
 }
 
 .footer-disclaimer {
-    width: 100%; /* JM adjusted width, seemed to affect mobile but not desktop, and I don't know why */
+    width: 90%; /* JM adjusted width, seemed to affect mobile but not desktop, and I don't know why */
     max-width: 600px;
     background-color: transparent; /* Transparent background */
     color: white;
