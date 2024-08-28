@@ -158,6 +158,17 @@ a:hover {
     border: 1px solid #213A53;
 }
 
+.button.black {
+    background-color: #010101;
+    color: #A3CA57;
+    border: none;
+}
+
+.button.black:hover {
+    background-color: #A3CA57; /* Darker hover color for main buttons */
+    color: #010101;
+}
+
 
 .button.white:hover {
     background-color: #4B91D1;
