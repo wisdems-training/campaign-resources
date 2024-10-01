@@ -15,6 +15,7 @@ body {
     background-image: url('../resources/field_blur.jpg'); /* Updated background image */
     background-size: cover;
     background-position: center;
+	color: #264351;
 }
 
 .container {
@@ -246,4 +247,8 @@ a:hover {
         font-size: 8px; /* JM added small font size */
 
     }
+	
+
+	
+	
 }
