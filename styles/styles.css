@@ -217,6 +217,12 @@ a:hover {
     margin: 2px 0; /* Tightened margin for paragraphs */
 }
 
+.update {
+	font-size: 8px;
+	margin-top: 30px;
+	font-style: italic;
+}
+
 @media (max-width: 768px) {
     body {
         background-image: none; /* Remove background image on mobile */
